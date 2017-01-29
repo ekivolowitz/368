@@ -1,0 +1,5 @@
+Enter a fancy string: Enter the number of rows: Enter the number of cols: 
+
+
+
+
