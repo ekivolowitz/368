@@ -29,7 +29,7 @@ private:
     static int numStudents;
 
 /*Private methods, if any should be added BELOW this line*/
-
+    std::string formatAssignmentsScore(std::vector<double> &a);
 
 /*Private methods, if any should be added ABOVE this line*/
 

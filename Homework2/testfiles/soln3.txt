@@ -1,0 +1,8 @@
+Enter the name of the first file: Enter the name of the second file: 
+Number of recipes in gordonramsay = 30
+Number of recipes in spam = 0
+Number of recipes that are present in BOTH gordonramsay AND spam = 0
+Number of recipes that are in gordonramsay BUT NOT IN spam = 30
+
+The set intersection of the two files was written to a file named intersection.txt
+The set difference of the two files was written to a file named difference.txt

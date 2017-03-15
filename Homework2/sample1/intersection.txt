@@ -1,0 +1,4 @@
+American,Hamburgers
+Breakfast,Omelette
+Breakfast,Quiche
+Italian,Pizza
