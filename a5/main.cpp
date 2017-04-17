@@ -3,6 +3,7 @@
 
 
 int main() {
+    /*
     std::cout << "Constructing n1 and n2..." << std::endl;
     SmartInteger n1(3);
     SmartInteger n2;
@@ -22,14 +23,15 @@ int main() {
     std::cout << "n3.getValue() should be 3: " << n3.getValue() << std::endl;
     std::cout << std::endl;
     // Add more code here!
-    std::cout << "Testing <<\n" << n3 << std::endl;
-    std::cout << std::endl;
-
-    SmartInteger t0 = 4;
+*/
+    SmartInteger t0 = 2;
     SmartInteger t1 = 5;
     SmartInteger t2 = 6;
+    SmartInteger t3 = -3;
+    t0 + t3;
+    
 
-
+/*
     
     bool result1 = t1 < t2;//True
     bool result2 = t1 > t2;//False
@@ -61,6 +63,6 @@ int main() {
     std::cout << t1 << std::endl;
     --t1;
     std::cout << t1 << std::endl;
-    
+  */  
     return 0;
 }

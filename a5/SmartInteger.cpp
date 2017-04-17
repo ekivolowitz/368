@@ -65,9 +65,34 @@ SmartInteger SmartInteger::operator+ (const SmartInteger& n)
 {
     int max = std::numeric_limits<int>::max();
     int min = std::numeric_limits<int>::min(); 
-    if((n.getValue() > 0 || getValue() > 0) && (getValue() > max - getValue() || n.getValue() > max - n.getValue())) throw std::exception();
-    else if((n.getValue() < 0) && (getValue() < max - getValue())) throw std::exception();
     
+    //Second is negative
+    if(n.getValue() < 0)
+    {
+        // - + -
+        if(getValue() < 0)
+        {
+            if(getValue() > min - n.getValue()) throw std::exception();
+        }
+
+    } 
+    //Second is positive
+    else
+    {
+        //First is negative
+        //- + +
+        if(getValue() <  min + n.getValue()) throw std::exception();
+        //first is positive
+        //+ + + 
+        else
+        {
+            if(getValue() > max - n.getValue()) throw std::exception();
+        }
+    }
+
+
+
+
     SmartInteger x = (getValue() + n.getValue());
     return x; 
 }
