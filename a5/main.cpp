@@ -47,9 +47,9 @@ int main() {
 
     SmartInteger max =  std::numeric_limits<int>::max();
     SmartInteger min =  std::numeric_limits<int>::min();
-    //std::cout << "T1 before: " << t1 << std::endl;
-    //t1 += t2;
-    //std::cout << "T1 after adding t2: " << t1 << std::endl;
+    std::cout << "T1 before: " << t1 << std::endl;
+    t1 += t2;
+    std::cout << "T1 after adding t2: " << t1 << std::endl;
     //t1 += s;
     //std::cout <<"T1 after trying to add max: " << t1 << std::endl;
     //std::cout <<"testing min underflow" <<std::endl; 

@@ -77,8 +77,7 @@ SmartInteger SmartInteger::operator- (const SmartInteger& n)
     int max = std::numeric_limits<int>::max();
     int min = std::numeric_limits<int>::min(); 
     if((n.getValue() > 0 || getValue() > 0) && (getValue() < max + n.getValue() || n.getValue() < max + getValue())) throw std::exception();
-    else if((n.getValue() < 0 || getValue() < 0) && (getValue() > min - n.getValue()) || n.getValue() > min - getValue()) std::cout <<"LSDKJFL:SDJK" << std::endl; 
-        //throw std::exception();
+    else if((n.getValue() < 0 || getValue() < 0) && (getValue() > min - n.getValue()) || n.getValue() > min - getValue()) throw std::exception();
 
     SmartInteger x = (getValue() - n.getValue());
     return x;
@@ -101,12 +100,13 @@ SmartInteger SmartInteger::operator* (const SmartInteger& n)
     return x;
 }
 
-void SmartInteger::operator+= (const SmartInteger& n)
+SmartInteger &SmartInteger::operator+= (const SmartInteger& n)
 {
     try
     {
         SmartInteger l = (*this + n);
         num = l.getValue();
+        return (*this);
     }
     catch(std::exception e)
     {
@@ -114,12 +114,13 @@ void SmartInteger::operator+= (const SmartInteger& n)
     }
 }
 
-void SmartInteger::operator-= (const SmartInteger &n)
+SmartInteger &SmartInteger::operator-= (const SmartInteger &n)
 {
     try
     {
         SmartInteger l = (*this - n);
         num = l.getValue();
+        return (*this);
     }
     catch(std::exception e)
     {
@@ -127,12 +128,13 @@ void SmartInteger::operator-= (const SmartInteger &n)
     }
 }
 
-void SmartInteger::operator*= (const SmartInteger &n)
+SmartInteger &SmartInteger::operator*= (const SmartInteger &n)
 {
     try
     {
         SmartInteger l = (*this * n);
         num = l.getValue();
+        return (*this);
     }
     catch(std::exception e)
     {
@@ -153,12 +155,13 @@ SmartInteger SmartInteger::operator-()
     }
 }
 
-void SmartInteger::operator++()
+SmartInteger &SmartInteger::operator++()
 {
     try
     {
         SmartInteger l = (*this + 1);
         num = l.getValue();
+        return *this;
     }
     catch(std::exception e)
     {
@@ -166,12 +169,13 @@ void SmartInteger::operator++()
     }
 }
 
-void SmartInteger::operator--()
+SmartInteger &SmartInteger::operator--()
 {
     try
     {
         SmartInteger l = (*this - 1);
         num = l.getValue();
+        return *this;
     }
     catch(std::exception e)
     {

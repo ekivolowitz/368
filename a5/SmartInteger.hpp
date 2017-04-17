@@ -17,12 +17,12 @@ public:
     SmartInteger operator+ (const SmartInteger& n);
     SmartInteger operator- (const SmartInteger& n);
     SmartInteger operator* (const SmartInteger& n);
-    void operator+= (const SmartInteger& n);
-    void operator-= (const SmartInteger& n); 
-    void operator*= (const SmartInteger& n);
+    SmartInteger &operator+= (const SmartInteger& n);
+    SmartInteger &operator-= (const SmartInteger& n); 
+    SmartInteger &operator*= (const SmartInteger& n);
     SmartInteger operator-();
-    void operator++(); 
-    void operator--();
+    SmartInteger &operator++(); 
+    SmartInteger &operator--();
 
 private:
 	int num;
