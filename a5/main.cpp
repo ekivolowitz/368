@@ -24,12 +24,14 @@ int main() {
     std::cout << std::endl;
     // Add more code here!
 */
-    SmartInteger t0 = 2;
+
+    SmartInteger min =  std::numeric_limits<int>::min();
+    SmartInteger n1(2);
     SmartInteger t1 = 5;
     SmartInteger t2 = 6;
-    SmartInteger t3 = -3;
-    t0 + t3;
+    SmartInteger n2(-3);
     
+    std::cout << "n4 + n2 = " << min + n2 << std::endl;
 
 /*
     

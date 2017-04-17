@@ -72,8 +72,14 @@ SmartInteger SmartInteger::operator+ (const SmartInteger& n)
         // - + -
         if(getValue() < 0)
         {
-            if(getValue() > min - n.getValue()) throw std::exception();
+
+            std::cout << "LHS is " << num << std::endl;
+            std::cout << "RHS is " << n.getValue() << std::endl;
+
+            if(getValue() < (min - n.getValue())) throw std::exception();
         }
+        std::cout << getValue() << " > " << min - n.getValue() << std::endl;
+        if(getValue() == min && n.getValue() == min) throw std::exception();
 
     } 
     //Second is positive
@@ -81,7 +87,9 @@ SmartInteger SmartInteger::operator+ (const SmartInteger& n)
     {
         //First is negative
         //- + +
-        if(getValue() <  min + n.getValue()) throw std::exception();
+        if(n.getValue() < min + getValue()) throw std::exception();
+        
+        
         //first is positive
         //+ + + 
         else
