@@ -28,7 +28,6 @@ void fillStudents(std::istream &inFile,
     std::string tempLine;
 	while(std::getline(inFile, tempLine))
 	{
-
 		std::stringstream ss;
 		std::vector<std::string> values;
 		ss.str(tempLine);
@@ -79,7 +78,6 @@ void printStudents(const std::vector<std::reference_wrapper<Student>> &students)
     {
     	((*it).get()).printDetails();
     }
-
 }
 
 
@@ -111,11 +109,11 @@ void computeStatistics(std::vector<std::reference_wrapper<Student>> &students) {
     std::sort(students.begin(), students.end(), [](Student& A, Student& B) {return A.getTotal() > B.getTotal() ;} );
 
 
-
-
     for(auto it = students.begin(); it != students.end(); ++it)
     {
     	std::cout << (*it).get().getId() << ", " << (*it).get().getName() << ", " << (*it).get().getTotal() << ", " << (*it).get().getGrade() << std::endl;
     }
-    // sort and print the students based on their total.
+    std::cout << std::endl;
+    //sort and print the students based on their total.
+    //printStudents(students);
 }

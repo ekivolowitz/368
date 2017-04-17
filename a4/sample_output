@@ -1,0 +1,151 @@
+./a.out students.txt
+The total number of students in the class = 11
+
+UNDERGRADUATE STUDENT INFORMATION
+---------------------------------
+STUDENT DETAILS:
+Id = 2
+Name = Joe Dart
+Assignments = [93, 67, 78, 96, 91, 97]
+Project = 96
+Total = 89.7
+Grade = CR
+Type = Undergraduate Student
+Residence Hall = Sellery
+Year in College = Senior
+
+STUDENT DETAILS:
+Id = 5
+Name = Cory Henry
+Assignments = [100, 97, 100, 87, 95, 86]
+Project = 93
+Total = 93.8167
+Grade = CR
+Type = Undergraduate Student
+Residence Hall = Waters
+Year in College = Junior
+
+STUDENT DETAILS:
+Id = 6
+Name = Antwaun Stanley
+Assignments = [67, 96, 83, 76, 60, 99]
+Project = 89
+Total = 82.8167
+Grade = CR
+Type = Undergraduate Student
+Residence Hall = Waters
+Year in College = Sophomore
+
+STUDENT DETAILS:
+Id = 7
+Name = Shaun Martin
+Assignments = [51, 79, 50, 68, 60, 70]
+Project = 75
+Total = 66.6
+Grade = N
+Type = Undergraduate Student
+Residence Hall = Leopold
+Year in College = Freshman
+
+STUDENT DETAILS:
+Id = 10
+Name = Joey Dosik
+Assignments = [76, 96, 59, 65, 40, 96]
+Project = 77
+Total = 73.5
+Grade = CR
+Type = Undergraduate Student
+Residence Hall = Ogg
+Year in College = Junior
+
+UNDERGRADUATE STUDENT STATISTICS
+--------------------------------
+Number of students = 5
+The mean of the total score = 81.2867
+The sorted list of students (id, name, total, grade) in descending order of total:
+5, Cory Henry, 93.8167, CR
+2, Joe Dart, 89.7, CR
+6, Antwaun Stanley, 82.8167, CR
+10, Joey Dosik, 73.5, CR
+7, Shaun Martin, 66.6, N
+
+GRADUATE STUDENT INFORMATION
+----------------------------
+STUDENT DETAILS:
+Id = 0
+Name = Jack Stratton
+Assignments = [82, 97, 77, 88, 93, 94]
+Project = 99
+Total = 93.75
+Grade = CR
+Type = Graduate Student
+Research Area = Performing Arts Technology
+Advisor = Reinhold Mack
+
+STUDENT DETAILS:
+Id = 1
+Name = Theo Katzmann
+Assignments = [57, 73, 72, 67, 68, 79]
+Project = 71
+Total = 70.1667
+Grade = N
+Type = Graduate Student
+Research Area = Jazz Studies
+Advisor = Darren Criss
+
+STUDENT DETAILS:
+Id = 3
+Name = Woody Goss
+Assignments = [95, 67, 58, 59, 83, 57]
+Project = 63
+Total = 66.4167
+Grade = N
+Type = Graduate Student
+Research Area = Jazz Studies
+Advisor = Bill Evans
+
+STUDENT DETAILS:
+Id = 4
+Name = Michael League
+Assignments = [54, 77, 89, 75, 90, 87]
+Project = 91
+Total = 84.8333
+Grade = CR
+Type = Graduate Student
+Research Area = School of Funk
+Advisor = Bootsy Collins
+
+STUDENT DETAILS:
+Id = 8
+Name = Robert Sput Searight
+Assignments = [99, 87, 83, 90, 79, 98]
+Project = 79
+Total = 84.1667
+Grade = CR
+Type = Graduate Student
+Research Area = Percussion Studies
+Advisor = Elvin Jones
+
+STUDENT DETAILS:
+Id = 9
+Name = Mark Lettieri
+Assignments = [67, 90, 83, 96, 87, 95]
+Project = 98
+Total = 92.1667
+Grade = CR
+Type = Graduate Student
+Research Area = Guitar Studies
+Advisor = Wes Montgomery
+
+GRADUATE STUDENT STATISTICS
+---------------------------
+Number of students = 6
+The mean of the total score = 81.9167
+The sorted list of students (id, name, total, grade) in descending order of total:
+0, Jack Stratton, 93.75, CR
+9, Mark Lettieri, 92.1667, CR
+4, Michael League, 84.8333, CR
+8, Robert Sput Searight, 84.1667, CR
+1, Theo Katzmann, 70.1667, N
+3, Woody Goss, 66.4167, N
+

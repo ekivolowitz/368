@@ -36,7 +36,6 @@ std::string Student::formatAssignmentsScore(std::vector<double> &a)
 			convertStream << *it;
 			std::string convertString = convertStream.str();
 			retValue += convertString;
-			// retValue += dtos(*it);
 			retValue += "]";	
 		} 
 		else
