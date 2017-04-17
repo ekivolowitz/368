@@ -4,3 +4,7 @@ run:
 	./exec
 clean:
 	rm exec
+full:
+	make
+	make run
+	make clean
