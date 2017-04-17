@@ -65,39 +65,32 @@ SmartInteger SmartInteger::operator+ (const SmartInteger& n)
 {
     int max = std::numeric_limits<int>::max();
     int min = std::numeric_limits<int>::min(); 
-    
-    //Second is negative
-    if(n.getValue() < 0)
-    {
-        // - + -
-        if(getValue() < 0)
-        {
+   
+    std::cout << num << " + " << n.getValue() << std::endl;
 
-            std::cout << "LHS is " << num << std::endl;
-            std::cout << "RHS is " << n.getValue() << std::endl;
+    //If LHS is max and RHS is +
+    //This throws the exception properly.
+    if(num == max && n.getValue() > 0) throw std::exception();
 
-            if(getValue() < (min - n.getValue())) throw std::exception();
-        }
-        std::cout << getValue() << " > " << min - n.getValue() << std::endl;
-        if(getValue() == min && n.getValue() == min) throw std::exception();
+    //If LHS is min and RHS is -
+    //This throws the exception properly.
+    if(num == min && n.getValue() < 0) throw std::exception();
 
-    } 
-    //Second is positive
-    else
-    {
-        //First is negative
-        //- + +
-        if(n.getValue() < min + getValue()) throw std::exception();
-        
-        
-        //first is positive
-        //+ + + 
-        else
-        {
-            if(getValue() > max - n.getValue()) throw std::exception();
-        }
-    }
+    //If RHS is max and LHS is +
+    //This throws the exception properly.
+    if(n.getValue() == max && num > 0) throw std::exception();
 
+    //If RHS is min and LHS is -
+    //This throws the exception properly.
+    if(n.getValue() == min && num < 0) throw std::exception();
+
+    //If LHS is + and RHS is + and the sum goes over max
+    //This throws the exception properly.
+    if((num > 0 && n.getValue() > 0) && (n.getValue() > (max - num))) throw std::exception();
+
+    //If LHS is - and RHS is - and the sum goes below min
+    //This throws the exception properly.
+    if((num < 0 && n.getValue() < 0) && (num < (min - n.getValue()))) throw std::exception();
 
 
 

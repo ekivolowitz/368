@@ -25,13 +25,17 @@ int main() {
     // Add more code here!
 */
 
-    SmartInteger min =  std::numeric_limits<int>::min();
+    SmartInteger min = std::numeric_limits<int>::min();
+    SmartInteger max = std::numeric_limits<int>::max();
     SmartInteger n1(2);
     SmartInteger t1 = 5;
     SmartInteger t2 = 6;
     SmartInteger n2(-3);
+    SmartInteger d = (min.getValue() + 2);
+
+
+    n2 + d;
     
-    std::cout << "n4 + n2 = " << min + n2 << std::endl;
 
 /*
     
