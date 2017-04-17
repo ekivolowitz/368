@@ -25,37 +25,37 @@ std::ostream& operator<<(std::ostream& os, const SmartInteger& n)
     return os;
 }
 
-bool SmartInteger::operator<(const SmartInteger& n)
+bool SmartInteger::operator<(const SmartInteger& n) const
 {
     if(getValue() < n.getValue()) return true;
     else return false;
 }
 
-bool SmartInteger::operator>(const SmartInteger& n)
+bool SmartInteger::operator>(const SmartInteger& n) const
 {
     if(getValue() > n.getValue()) return true;
     else return false;
 }
 
-bool SmartInteger::operator<=(const SmartInteger& n)
+bool SmartInteger::operator<=(const SmartInteger& n) const
 {
     if(getValue() <= n.getValue()) return true;
     else return false;
 }
 
-bool SmartInteger::operator>=(const SmartInteger& n)
+bool SmartInteger::operator>=(const SmartInteger& n) const
 {
     if(getValue() >= n.getValue()) return true;
     else return false;
 }
 
-bool SmartInteger::operator==(const SmartInteger& n)
+bool SmartInteger::operator==(const SmartInteger& n) const
 {
     if(getValue() == n.getValue()) return true;
     else return false;
 }
 
-bool SmartInteger::operator!=(const SmartInteger& n)
+bool SmartInteger::operator!=(const SmartInteger& n) const
 {
     if(getValue() != n.getValue()) return true;
     else return false;
